@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Operações CRUD de JavaScript puro com Html</title>
+    <link rel="stylesheet" href="css/estilo.css">
+</head>
+
+<body>
+    <table>
+        <tr>
+            <td>
+                <form onsubmit="event.preventDefault(); onFormSubmit();" autocomplete="off">
+                    <div>
+                        <label>Nome Completo*</label>
+                        <label class="validacao-erro hide" id="nomeCompletoValidacaoErro">Este campo é obrigatório.</label>
+                        <input type="text" name="nomeCompleto" id="nomeCompleto">
+                    </div>
+                    <div>
+                        <label for="">Código do Colaborador</label>
+                        <input type="text" name="codigoFunc" id="codigoFunc">
+                    </div>
+                    <div>
+                        <label for="">Sálario</label>
+                        <input type="text" name="salario" id="salario">
+                    </div>
+                    <div>
+                        <label for="">Cidade</label>
+                        <input type="text" name="cidade" id="cidade">
+                    </div>
+                    <div class="form-acao-botoes">
+                        <input type="submit" value="Enviar">
+                    </div>
+                </form>
+            </td>
+            <table class="lista" id="listaFunc">
+                <thead>
+                    <tr>
+                        <th>Nome Completo</th>
+                        <th>Código do Colaborador</th>
+                        <th>Sálario</th>
+                        <th>Cidade</th>
+                        <th></th>
+                    </tr>
+                </thead>
+                <tbody>
+
+                </tbody>
+            </table>
+        </tr>
+    </table>
+    <script type="text/javascript" src="js/meuScript.js"></script>
+</body>
+
+</html>
